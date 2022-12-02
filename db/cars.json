@@ -48,64 +48,77 @@
     "price": "$400,000",
     "mileage": "66,000",
     "description": "The Nissan Skyline GT-R is an iconic Japanese sports coupe in the Nissan Skyline range. Dubbed Godzilla by Wheels magazine in Australia when released there in 1989, it was rated by many motoring magazines, including the well-respected Wheels, as providing performance and handling equal or superior to that of European icons like the Porsche 911 and the Ferrari Testarossa, at a considerably lower price. The Skyline's home-market competitors have included the Honda NSX, Toyota Supra, Mitsubishi Lancer Evolution, Subaru Impreza WRX STi, and Mazda RX-7."
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}, {
-    "make": "1", 
-    "model": "1",
-    "year": "1", 
-    "image": "1",
-    "engine": "1",
-    "transmission": "1",
-    "price": "1",
-    "mileage": "",
-    "description": ""
-}]
+},
+{ 
+    "make": "Lamborghini",
+    "model":"Huracan STO",
+    "year":"2021" ,
+    "image":"https://imgur.com/dKr8IRO",
+    "engine":"v10",
+    "transmission":"Auto",
+    "price":"1",
+    "discription":"Available only as a two-door coupe, the 2022 Lamborghini Huracan STO is an exotic mid-engine sports car made for maximum performance on or off the racetrack. It comes with a 5.2-liter V10 engine (630 horsepower and 417-lb-ft of torque), a seven-speed dual-clutch automatic transmission and rear-wheel drive."
+},
+{ 
+    "make": "BMW",
+    "model":"M4CS",
+    "year":"2020" ,
+    "image":"https://imgur.com/gnnGENi , https://imgur.com/byRtTfO ",
+    "engine":"il6",
+    "transmission":"Auto",
+    "price":"1",
+    "discription":"BMW's M TwinPower Turbo technology allows the M4 CS to dip below the four-second benchmark for the 0 to 100 km/h (62 mph) sprint, stopping the clock at a breath taking 3.9 seconds. The top speed of the M4 CS, which comes as standard with the M Driver's Package, is electronically limited to 280 km/h (174 mph)."
+},
+{ 
+    "make": "Ferrari",
+    "model":"458",
+    "year":"2020" ,
+    "image":"https://imgur.com/H31pNgI",
+    "engine":"v8",
+    "transmission":"auto",
+    "price":"1",
+    "discription":"Ferrari 458 Italia Coupe Engine and Performance Details The 458 is a work of art and aerodynamic efficiency, featuring a 4.5L naturally aspirated V8 engine that produces a stunning 562 hp at 9,000 RPM. The engine outputs 125 hp per liter, which is a record for the highest amount of power per naturally aspirated piston."
+},
+{ 
+    "make": "Porche",
+    "model":"GT3RS",
+    "year":"2021" ,
+    "image":"https://imgur.com/cA6hyke",
+    "engine":"Flat Six",
+    "transmission":"Auto",
+    "mileage":"",
+    "price":"1",
+    "discription":"A 4.0-liter high revving naturally aspirated 518 hp engine. Fully automatic adjustment of the front diffuser and rear wing. Drag Reduction System (DRS) — rear wing. Aero wishbone on the front axle for up to 88 lbs more downforce."
+},
+    
+{ 
+    "make": "Porche",
+    "model":"911 Turbo S",
+    "year":"2021" ,
+    "image":"https://imgur.com/r629U0G",
+    "engine":"Flat Six",
+    "transmission":"Auto",
+    "price":"1",
+    "discription":"Engine, Transmission, and Performance Hanging out in the rear of both the Turbo and Turbo S is a twin-turbocharged 3.7-liter flat-six engine that makes up to 640 horsepower in the more powerful of the two variants; the regular Turbo model makes 572 horsepower."
+},
+{ 
+    "make": "BMW",
+    "model":"M3 Lime Rock Park Edition",
+    "year":"2010" ,
+    "image":"https://imgur.com/wldKiaK",
+    "engine":"V8",
+    "transmission":"Auto",
+    "price":"1",
+    "discription":"This is what will set the E92 apart from all other M3's and made it special for performance enthusiasts around the globe. The BMW M3 E92 will forever be remembered as the classic M3 because it's the only V8-powered version and it's not coming back."
+},
+{ 
+    "make": "BMW",
+    "model":"M2 Compititon",
+    "year":"202" ,
+    "image":"https://imgur.com/BJXxYOR",
+    "engine":"il6'",
+    "transmission":"auto",
+    "price":"1",
+    "discription":"The M2 is powered by the twin-turbo 3.0-litre BMW S58 straight-six engine rated at 338 kW (453 hp) at 6,250 rpm and 550 N⋅m (406 lb⋅ft) between 2,600 and 5,950 rpm. It remains rear-wheel drive and will be available with a 6-speed manual or with an 8-speed automatic."
+}
+]
