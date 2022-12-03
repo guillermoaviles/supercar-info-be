@@ -2,12 +2,12 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://localhost/supercars')
-  .then((instance) => {
-    console.log(`Connected to db: ${instance.connections[0].name}`)
-  })
-  .catch((err) => {
-    console.log(`Connection failed :(`, err)
+  .connect('mongodb://localhost/supercars', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }, err => {
+    if(err) throw err;
+    console.log('Connected to Mongo baby!!!!')
   })
 
 module.exports = mongoose;
