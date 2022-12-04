@@ -7,10 +7,13 @@ const Supercar = require('../models/Supercar')
 
 router.get('/', async (req, res, next) => {
     try {
-      const supercars = await Supercar.find({})
+      // console.log('try')
+      const supercars = await Supercar.find({}) 
       res.json(supercars);
+      // res.send('hello')
     } catch (err) {
           next(err);
+          console.log('in controller func')
     }
 });
 
@@ -27,7 +30,7 @@ router.get('/make/:make', async (req, res, next) => {
 
 router.get('/model/:model', async (req, res, next) => {
     try {
-      const supercars = await Supercar.find({make: req.params.model})
+      const supercars = await Supercar.find({model: req.params.model})
       res.json(supercars);
     } catch (err) {
           next(err);
@@ -37,7 +40,7 @@ router.get('/model/:model', async (req, res, next) => {
 
 router.get('/year/:year', async (req, res, next) => {
     try {
-      const supercars = await Supercar.find({make: req.params.year})
+      const supercars = await Supercar.find({year: req.params.year})
       res.json(supercars);
     } catch (err) {
           next(err);
@@ -47,7 +50,7 @@ router.get('/year/:year', async (req, res, next) => {
 
 router.get('/model/:model/image', async (req, res, next) => {
     try {
-      const supercars = await Supercar.find({make: req.params.model})
+      const supercars = await Supercar.find({model: req.params.model})
       res.json(supercars.image);
     } catch (err) {
           next(err);
@@ -56,7 +59,7 @@ router.get('/model/:model/image', async (req, res, next) => {
 
 router.get('/engine/:engine', async (req, res, next) => {
     try {
-      const supercar = await Supercar.find({make: req.params.engine})
+      const supercar = await Supercar.find({engine: req.params.engine})
       res.json(supercar);
     } catch (err) {
           next(err);
@@ -66,7 +69,7 @@ router.get('/engine/:engine', async (req, res, next) => {
 
 router.get('/transmission/:transmission', async (req, res, next) => {
     try {
-      const supercar = await Supercar.find({make: req.params.transmission})
+      const supercar = await Supercar.find({transmission: req.params.transmission})
       res.json(supercar);
     } catch (err) {
           next(err);
@@ -76,7 +79,7 @@ router.get('/transmission/:transmission', async (req, res, next) => {
 
 router.get('/price/:price', async (req, res, next) => {
     try {
-      const supercar = await Supercar.find({make: req.params.price})
+      const supercar = await Supercar.find({price: req.params.price})
       res.json(supercar);
     } catch (err) {
           next(err);
@@ -86,7 +89,7 @@ router.get('/price/:price', async (req, res, next) => {
 
 router.get('/mileage/:mileage', async (req, res, next) => {
     try {
-      const supercar = await Supercar.find({make: req.params.mileage})
+      const supercar = await Supercar.find({mileage: req.params.mileage})
       res.json(supercar);
     } catch (err) {
           next(err);
@@ -96,7 +99,7 @@ router.get('/mileage/:mileage', async (req, res, next) => {
 
 router.get('/model/:model/description', async (req, res, next) => {
     try {
-      const supercar = await Supercar.find({make: req.params.model})
+      const supercar = await Supercar.find({model: req.params.model})
       res.json(supercar.description);
     } catch (err) {
           next(err);
