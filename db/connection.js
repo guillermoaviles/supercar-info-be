@@ -2,9 +2,10 @@
 const mongoose = require('mongoose');
 
 const mongoURI = 
-  process.env.NODE_ENV === `production`
-  ? process.env.MONGODB_URI
-  : `mongodb://localhost/supercars`;
+  // process.env.NODE_ENV === `production`
+  // ? process.env.MONGODB_URI
+  // :
+   `mongodb://localhost/supercars`;
 
 mongoose
   .connect(mongoURI, {
@@ -14,9 +15,6 @@ mongoose
     if(err) throw err;
     console.log(`Connected to Mongo baby!!!! ${mongoURI}`)
   })
-  // .then((instance) => {
-  //   console.log(`Connected to Mongo baby!!!! ${instance.connections[0].name}`)
-  // })
 
 module.exports = mongoose;
 
