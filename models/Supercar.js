@@ -7,13 +7,13 @@ const supercarSchema = new Schema(
     {
         make: String,
         model: String,
-        year: String,
-        // image: String,
+        year: Number,
+        image: String,
         engine: String,
         transmission: String,
-        price: String,
-        mileage: String,
-        // description: String
+        price: Number,
+        mileage: Number,
+        description: String
     }
 );
 
