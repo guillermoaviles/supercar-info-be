@@ -1,10 +1,10 @@
 // Import Mongoose to interface with MongoDB
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-
-const mongoURI = 
+const mongoURI = process.env.DATABASE_URL
   process.env.NODE_ENV === `production`
-  ? process.env.MONGODB_URI
+  ? process.env.DATABASE_URL
   :`mongodb://localhost/supercars`;
 
 mongoose
