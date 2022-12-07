@@ -13,7 +13,8 @@ describe('GET /model/:model/description', () => {
                     model: "c63",
                     make: "Mercedes",
                     year: 2020,
-                    mileage: 42444
+                    mileage: 42444,
+                    price: 75000
                 })
             done()
             })
@@ -30,10 +31,28 @@ describe('GET /mileage/:mileage', () => {
                     model: "c63",
                     make: "Mercedes",
                     year: 2020,
-                    mileage: 42444
+                    mileage: 42444,
+                    price: 75000
                 })
             done()
             })
     })
 })
 
+describe('GET /price/:price', () => {
+    it('should return a 200 response', done => {
+        api
+            .get('/price/75000')
+            .set('Accept', 'application/json')
+            .end((err, res) => {
+                expect(response.body).to.include({
+                    model: "c63",
+                    make: "Mercedes",
+                    year: 2020,
+                    mileage: 42444,
+                    price: 75000
+                })
+            done()
+            })
+    })
+})
