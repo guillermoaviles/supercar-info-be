@@ -14,7 +14,8 @@ describe('GET /model/:model/description', () => {
                     make: "Mercedes",
                     year: 2020,
                     mileage: 42444,
-                    price: 75000
+                    price: 75000,
+                    transmission: "auto"
                 })
             done()
             })
@@ -32,7 +33,8 @@ describe('GET /mileage/:mileage', () => {
                     make: "Mercedes",
                     year: 2020,
                     mileage: 42444,
-                    price: 75000
+                    price: 75000,
+                    transmission: "auto"
                 })
             done()
             })
@@ -50,7 +52,27 @@ describe('GET /price/:price', () => {
                     make: "Mercedes",
                     year: 2020,
                     mileage: 42444,
-                    price: 75000
+                    price: 75000,
+                    transmission: "auto"
+                })
+            done()
+            })
+    })
+})
+
+describe('GET /transmission/:transmission', () => {
+    it('should return a 200 response', done => {
+        api
+            .get('/price/75000')
+            .set('Accept', 'application/json')
+            .end((err, res) => {
+                expect(response.body).to.include({
+                    model: "c63",
+                    make: "Mercedes",
+                    year: 2020,
+                    mileage: 42444,
+                    price: 75000,
+                    transmission: "auto"
                 })
             done()
             })
