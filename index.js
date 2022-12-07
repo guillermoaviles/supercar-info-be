@@ -50,3 +50,5 @@ app.use((err, req, res, next) => {
 app.listen(app.get('port'), () => {
 	console.log(`✅ PORT: ${app.get('port')} 🌟`);
 });
+
+module.exports = app;
